@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# vecorel-cli = ">=0.1"
+pymarkdownlnt = ">=0.9"
+
+[scripts]
+test-docs = "pymarkdown -d md024,md013 scan ."
+test-schema = "vecorel validate-schema core/schema/schema.yaml"
+test-geojson-collection = "vecorel validate geojson/examples/featurecollection -s core/schema/schema.yaml --data"
+test-geojson-features = "vecorel validate geojson/examples/individual-features -s core/schema/schema.yaml --data"
+test-geoparquet = "vecorel validate geoparquet/examples -s core/schema/schema.yaml --data"
+create-geoparquet = "vecorel create-geoparquet geojson/examples/featurecollection/features.json -o geoparquet/examples/example.parquet -s core/schema/schema.yaml"

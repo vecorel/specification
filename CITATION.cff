@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you are referring to the Vecorel specification in your publications, please cite it as below."
+type: software
+title: "Vector Core Language (Vecorel) specification"
+authors:
+  - name: Vecorel contributors
+preferred-citation:
+  type: standard
+  title: "Vector Core Language (Vecorel) specification"
+  abstract: "Making vector data available in a unified way."
+  version: 0.1.0
+  year: 2025
+  date-released: 2025-03-24
+  license: Apache-2.0
+  url: https://github.com/vecorel
+  repository: https://github.com/vecorel/specification
+  authors:
+    - name: Vecorel contributors

@@ -1,0 +1,14 @@
+geojson/schema/schema.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+/.idea/
+/.vscode/
+
+# Python
+Pipfile.lock
+__pycache__/
+*.egg-info/
