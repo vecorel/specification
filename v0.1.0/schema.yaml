@@ -1,4 +1,4 @@
-$schema: https://vecorel.github.io/sdl/v0.1.0/schema.json
+$schema: https://vecorel.github.io/sdl/v0.2.0/schema.json
 required:
   - schemas
   - id
