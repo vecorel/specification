@@ -33,18 +33,25 @@ The mapping between the Parquet data types and the Vecorel SDL data types, can b
 [data type mapping](datatypes.md).
 
 > [!IMPORTANT]  
-> RFC 7946 doesn't support a property named `crs`, which was only available in an earlier version of GeoJSON (2008).
+> RFC 7946 doesn't support a property named `crs`, which was only available in an earlier version of
+> GeoJSON (2008).
 > The CRS of the GeoJSON geometry and bbox must be WGS 84 / OGC CRS 84,
 > see the [RFC 7946, chapter 4](https://datatracker.ietf.org/doc/html/rfc7946#section-4) for details.
 
-[Collection-level](../core/README.md#collection) data is not supported.
-All properties are provides in the JSON object with the key [`properties`](#properties).
+For GeoJSON Features, collection-level data is only applicable for properties that are
+collection-only, e.g. `schemas`.
+All collection-level data is stored on the top-level of the Feature object as
+[foreign members](https://datatracker.ietf.org/doc/html/rfc7946#section-6.1).
+All other data is always in the [`properties`](#properties) as it's just a single entity and
+there is no meaningful way to determine what collection-level data is.
+This behaviour does not apply for GeoJSON Features within a GeoJSON FeatureCollection.
 
 ### properties
 
 Must include any property that is required by the Vecorel specification.
 May include any additional property.
-All properties defined by the core specification (except for `id`, `geometry` and `bbox`) or extensions should be provided here.
+All properties defined by the core specification or extensions should be provided here
+except for `id`, `geometry`, `bbox` and collection-only properties.
 
 ## FeatureCollection
 
@@ -59,6 +66,8 @@ All properties are stored on the top-level of the FeatureCollection object as
 [foreign members](https://datatracker.ietf.org/doc/html/rfc7946#section-6.1).
 The individual features shall not contain any properties that are stored at the collection-level.
 Validation must ensure that the collection-level properties are taken into account.
+The de-duplication means that the individual features may not be valid without prior hydration
+(i.e. moving the collection-level properties back into the Feature properties).
 
 The following properties in Features can't be collection-level properties:
 
