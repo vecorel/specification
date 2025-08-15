@@ -7,7 +7,7 @@ common definitions are shared across these levels.
 - A Collection refers to a group of one or more features.
 - A Feature is a single field geometry with additional properties.
 
-- **Schema:** <https://vecorel.github.io/specification/v0.1.0/schema.yaml>
+- **Schema:** <https://vecorel.org/specification/v0.1.0/schema.yaml>
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -44,11 +44,11 @@ This describes two collections `abc` and `xyz`.
 ```json
 {
   "abc": [
-    "https://vecorel.github.io/specification/v0.1.0/schema.yaml"
+    "https://vecorel.org/specification/v0.1.0/schema.yaml"
   ],
   "xyz": [
-    "https://vecorel.github.io/specification/v0.1.0/schema.yaml",
-    "https://vecorel.github.io/crop-extension/v0.1.0/schema.yaml",
+    "https://vecorel.org/specification/v0.1.0/schema.yaml",
+    "https://vecorel.org/crop-extension/v0.1.0/schema.yaml",
   ]
 }
 ```

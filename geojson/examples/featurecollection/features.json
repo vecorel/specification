@@ -2,8 +2,8 @@
   "type": "FeatureCollection",
   "schemas": {
     "de_nrw": [
-      "https://vecorel.github.io/specification/v0.1.0/schema.yaml",
-      "https://vecorel.github.io/administrative-division-extension/v0.1.0/schema.yaml"
+      "https://vecorel.org/specification/v0.1.0/schema.yaml",
+      "https://vecorel.org/administrative-division-extension/v0.1.0/schema.yaml"
     ]
   },
   "schemas:custom": {
