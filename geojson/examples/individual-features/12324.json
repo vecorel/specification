@@ -1,37 +1,24 @@
 {
-  "schemas": {
-    "example": [
-      "https://vecorel.github.io/specification/v0.1.0/schema.yaml",
-      "https://fiboa.github.io/specification/v0.3.0/schema.yaml",
-      "https://fiboa.github.io/flik-extension/v0.1.0/schema.yaml"
-    ]
-  },
   "id": "12324",
   "type": "Feature",
+  "schemas": {
+    "de_nrw": [
+      "https://vecorel.github.io/specification/v0.1.0/schema.yaml",
+      "https://vecorel.github.io/administrative-division-extension/v0.1.0/schema.yaml"
+    ]
+  },
   "properties": {
-    "collection": "example",
-    "flik": "DENWLI0542130247",
-    "determination_datetime": "2005-02-28T00:00:00Z",
-    "nutz_code": "A",
-    "nutz_txt": "Ackerland",
-    "area": 1.6311
+    "collection": "de_nrw",
+    "license": "CC-BY-4.0",
+    "admin:country_code": "DE",
+    "admin:subdivision_code": "NW",
+    "determination_datetime": "2005-02-28T00:00:00Z"
   },
   "geometry": {
-    "type": "Polygon",
+    "type": "Point",
     "coordinates": [
-      [
-        [7.8752433, 51.7469574],
-        [7.8754156, 51.7486557],
-        [7.8755951, 51.7486575],
-        [7.8757271, 51.7486476],
-        [7.8758657, 51.7486117],
-        [7.8761609, 51.7485365],
-        [7.8762749, 51.7485265],
-        [7.8766462, 51.7485226],
-        [7.8766691, 51.7475958],
-        [7.8766832, 51.7470291],
-        [7.8752433, 51.7469574]
-      ]
+      7.628809195253012,
+      51.966334135641944
     ]
   }
 }
