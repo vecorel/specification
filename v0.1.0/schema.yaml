@@ -1,4 +1,4 @@
-$schema: https://vecorel.org/sdl/v0.1.0/schema.json
+$schema: https://vecorel.org/sdl/v0.2.0/schema.json
 required:
   - schemas
   - id
@@ -11,15 +11,17 @@ collection:
   bbox: false
 properties:
   schemas:
-    type: array
-    items:
-      type: string
-      format: uri
-      pattern: ^https?://
-    contains:
-      type: string
-      enum:
-        - https://vecorel.org/specification/v0.1.0/schema.yaml
+    type: object
+    additionalProperties:
+      type: array
+      items:
+        type: string
+        format: uri
+        pattern: ^https?://
+      contains:
+        type: string
+        enum:
+          - https://vecorel.org/specification/v0.1.0/schema.yaml
   id:
     type: string
     minLength: 1
