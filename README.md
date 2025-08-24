@@ -47,6 +47,6 @@ Please get in touch by [opening an issue](https://github.com/vecorel/specificati
 The Vecorel community strives to provide a welcoming and transparent environment for all of the project’s participants.
 You can find additional information about our community best practices and collaborative development processes below:
   
-- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Code of Conduct](https://vecorel.org/code-of-conduct/)
 - [Contribution Guideline](CONTRIBUTING.md)
 - [Development and Release Process](process.md)
