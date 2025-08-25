@@ -10,7 +10,7 @@ preferred-citation:
   abstract: "Making vector data available in a unified way."
   version: 0.1.0
   year: 2025
-  date-released: 2025-03-24
+  date-released: 2025-08-15
   license: Apache-2.0
   url: https://github.com/vecorel
   repository: https://github.com/vecorel/specification
