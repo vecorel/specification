@@ -32,7 +32,7 @@ The specification in this repository consists of three parts:
 To complement the specification, there are also best practices and extensions available:
 
 - [Best Practices](best-practices/README.md)
-- [Extensions](https://github.com/vecorel/extensions/)
+- [Extensions](https://vecorel.org/extensions/)
 
 ## Relation to other standards and working groups
 
