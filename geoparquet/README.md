@@ -15,7 +15,7 @@ Properties that are optional can be omitted if all values are
 i.e. the column can be missing from the GeoParquet file.
 
 Properties can also be stored at the [collection-level](../core/README.md#collection) if all values in a column have the same value.
-This de-duplicates data for more efficient resource usage and simplifies the sturcture of the Parquet file.
+This de-duplicates data for more efficient resource usage and simplifies the structure of the Parquet file.
 The GeoParquet file must embed the properties in the Parquet metadata in a property named `collection`.
 The metadata must be JSON-encoded.
 

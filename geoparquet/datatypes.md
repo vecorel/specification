@@ -11,7 +11,7 @@ It also shows the mapping to the GeoParquet data types.
 | int16                                               | IntType<br />bitWidth: 16<br />isSigned: true<br />(deprecated: INT_16) | yes                             |
 | uint16                                              | IntType<br />bitWidth: 16<br />isSigned: false<br />(deprecated: UINT_16) | yes                             |
 | int32                                               | IntType<br />bitWidth: 32<br />isSigned: true<br />(deprecated: INT_32) | yes                             |
-| uint32                                              | IntType<br />bitWidth: 64<br />isSigned: false<br />(deprecated: UINT_32) | yes                             |
+| uint32                                              | IntType<br />bitWidth: 32<br />isSigned: false<br />(deprecated: UINT_32) | yes                             |
 | int64                                               | IntType<br />bitWidth: 64<br />isSigned: true<br />(deprecated: INT_64) | yes                             |
 | uint64                                              | IntType<br />bitWidth: 64<br />isSigned: false<br />(deprecated: UINT_64) | yes                             |
 | float<br />IEEE 32-bit                              | FLOAT                                                        | yes                             |
