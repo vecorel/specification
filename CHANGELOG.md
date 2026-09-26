@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Rules for merging collections
+
+### Changed
+
+- Clarified that collection-level data applies to all features, except for `schemas`
+
+### Fixed
+
+- The GeoParquet bit width of `uint32` is 32
+- Collection-level data can be used with at least two features (was: more than two)
+- Various typos and an invalid JSON example
+
 ## [v0.1.0] - 2025-08-15
 
 - First release

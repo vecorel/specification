@@ -1,6 +1,6 @@
 # GeoJSON Encoding Specification
 
-The GeoJSON encoding defines to encode vector data compliant to Vecorel as
+The GeoJSON encoding defines how to encode vector data compliant to Vecorel as
 GeoJSON as defined in [IETF RFC7946](https://datatracker.ietf.org/doc/html/rfc7946).
 
 A single Vecorel Feature must be encoded as a GeoJSON [`Feature`](#feature).
@@ -29,7 +29,7 @@ The following properties are defined for a GeoJSON Feature (at the top-level of 
 | bbox          | array\<number>      | A [GeoJSON Bounding Box](https://datatracker.ietf.org/doc/html/rfc7946#section-5) |
 | properties    | object              | An object with all additional properties (see [`properties`](#properties)) |
 
-The mapping between the Parquet data types and the Vecorel SDL data types, can be found in the
+The mapping between the GeoJSON data types and the Vecorel SDL data types, can be found in the
 [data type mapping](datatypes.md).
 
 > [!IMPORTANT]  
@@ -75,7 +75,7 @@ The following properties in Features can't be collection-level properties:
 - `geometry`
 - `bbox`
 
-Properties with the following names can#t be moved to the collection-level due to conflicts with the
+Properties with the following names can't be moved to the collection-level due to conflicts with the
 FeatureCollection properties defined by GeoJSON:
 
 - `features`
